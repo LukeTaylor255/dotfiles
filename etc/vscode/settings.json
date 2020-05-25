@@ -1,0 +1,21 @@
+{
+    "window.zoomLevel": 3,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "One Monokai",
+    "calva.paredit.defaultKeyMap": "original",
+    "calva.prettyPrintingOptions": {
+        "enabled": false,
+        "printEngine": "pprint",
+        "width": 120
+    },
+    "terminal.external.linuxExec": "",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.external.osxExec": "Hyper.app",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.fontFamily": "Ubuntu Mono derivative Powerline",
+    "terminal.integrated.fontSize": 14,
+    "editor.minimap.enabled": true,
+    "editor.renderWhitespace": "all",
+    "workbench.activityBar.visible": false
+}
