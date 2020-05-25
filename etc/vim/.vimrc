@@ -1,3 +1,4 @@
+set shell=bash
 set background=dark
 " Use the monokai theme
 colorscheme monokai
@@ -10,8 +11,21 @@ set rtp+=~/.vundle/bundle/Vundle.vim
 call vundle#begin('~/.vundle/plugins')
 
 " Begin Plugins
+
+" Core plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'L9'
+Plugin 'tpope/vim-sensible'
+
+" Code completion
+" Plugin 'valloric/youcompleteme'
+" Plugin 'preservim/nerdtree'
+" Plugin 'xuyuanp/nerdtree-git-plugin'
+" Plugin 'yggdroot/indentline'
+" Plugin 'ap/vim-css-color'
+" Plugin 'vim-airline/vim-airline'
+" Plugin 'airblade/vim-gitgutter'
+
 " End Plugins
 
 call vundle#end()
