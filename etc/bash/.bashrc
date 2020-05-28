@@ -6,7 +6,7 @@
 
 # ALIASES
 alias ll="ls -lah"
-alias la="ls -a"
+alias la="ls -lAh"
 
 colors() {
 	local fgc bgc vals seq0

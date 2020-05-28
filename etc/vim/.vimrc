@@ -18,18 +18,20 @@ Plugin 'L9'
 Plugin 'tpope/vim-sensible'
 
 " Code completion
-" Plugin 'valloric/youcompleteme'
-" Plugin 'preservim/nerdtree'
-" Plugin 'xuyuanp/nerdtree-git-plugin'
-" Plugin 'yggdroot/indentline'
-" Plugin 'ap/vim-css-color'
-" Plugin 'vim-airline/vim-airline'
-" Plugin 'airblade/vim-gitgutter'
+Plugin 'valloric/youcompleteme'
+Plugin 'preservim/nerdtree'
+Plugin 'xuyuanp/nerdtree-git-plugin'
+Plugin 'yggdroot/indentline'
+Plugin 'ap/vim-css-color'
+Plugin 'vim-airline/vim-airline'
+Plugin 'airblade/vim-gitgutter'
 
 " End Plugins
 
 call vundle#end()
 filetype plugin indent on    " required for vundle
+
+let g:ycm_clangd_binary_path = "/usr/bin/clangd"
 
 " " Brief help
 " " :PluginList       - lists configured plugins
