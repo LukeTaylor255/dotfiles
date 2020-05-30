@@ -5,8 +5,9 @@ if [ -f ~/etc/bash/.bashrc ] && [ -f ~/.bashrc ] && [ ! -L ~/.bashrc ]
 then
     cp ~/.bashrc ~/.bashrc.old
     rm ~/.bashrc
-    ln -s ~/etc/bash/.bashrc ~/.bashrc
 fi
+
+ln -s ~/etc/bash/.bashrc ~/.bashrc
 
 # link zsh configuration
 ln -s ~/etc/zsh/.zshrc ~/.zshrc
