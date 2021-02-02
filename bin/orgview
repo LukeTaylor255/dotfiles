@@ -1,0 +1,9 @@
+#!/bin/sh
+if [ $# -eq 1 ]
+then
+  pandoc -f org -t pdf $1 --pdf-engine pdfroff -o - --highlight-style=breezedark --dpi 180 | zathura - --fork
+fi
+if [ $# -gt 1 ]
+then
+  pandoc -f markdown -t pdf $1 --pdf-engine pdfroff -o $2 --highlight-style=breezedark --dpi 180
+fi

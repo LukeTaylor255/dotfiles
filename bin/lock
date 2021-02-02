@@ -1,0 +1,3 @@
+#!/bin/sh
+
+i3lock --blur=8 -e -f -n

@@ -1,0 +1,4 @@
+#!/bin/bash
+# Picks a random background from ~/usr/img/bg/
+
+~/bin/updatebg `find ~/usr/img/bg/ -type f -print0 | shuf -z -n 1`

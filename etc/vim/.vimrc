@@ -19,12 +19,20 @@ Plugin 'tpope/vim-sensible'
 
 " Code completion
 Plugin 'valloric/youcompleteme'
+
+" Nerdtree
 Plugin 'preservim/nerdtree'
 Plugin 'xuyuanp/nerdtree-git-plugin'
+
+" Appearance
 Plugin 'yggdroot/indentline'
 Plugin 'ap/vim-css-color'
 Plugin 'vim-airline/vim-airline'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-airline/vim-airline-themes'
+
+" Notes
+Plugin 'vimwiki/vimwiki'
 
 " End Plugins
 
@@ -33,6 +41,19 @@ filetype plugin indent on    " required for vundle
 
 let g:ycm_clangd_binary_path = "/usr/bin/clangd"
 
+if !exists('g:airline_symbols')
+				let g:airline_symbols = {}
+endif
+
+		" powerline symbols
+    let g:airline_left_sep = ''
+    let g:airline_left_alt_sep = ''
+    let g:airline_right_sep = ''
+    let g:airline_right_alt_sep = ''
+    let g:airline_symbols.branch = ''
+    let g:airline_symbols.readonly = ''
+    let g:airline_symbols.linenr = '☰'
+    let g:airline_symbols.maxlinenr = ''
 " " Brief help
 " " :PluginList       - lists configured plugins
 " " :PluginInstall    - installs plugins; append `!` to update or just
