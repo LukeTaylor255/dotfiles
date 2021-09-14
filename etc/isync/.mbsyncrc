@@ -1,0 +1,22 @@
+IMAPAccount protonmail-ltaylor255
+Host localhost
+Port 1143
+SSLType None
+User ltaylor255
+PassCmd "~/bin/bridgepass"
+
+IMAPStore protonmail-ltaylor255
+Account protonmail-ltaylor255
+
+MaildirStore protonmail-ltaylor255-local
+Subfolders Verbatim
+Path ~/.mail/proton/
+Inbox ~/.mail/proton/Inbox
+
+Channel protonmail-ltaylor255
+Master :protonmail-ltaylor255:
+Slave :protonmail-ltaylor255-local:
+
+SyncState *
+Sync New ReNew Flags
+

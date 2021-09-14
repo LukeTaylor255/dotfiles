@@ -1,15 +1,11 @@
 set shell=bash
 set background=dark
 " Use the monokai theme
-colorscheme monokai
+syntax on
+colorscheme onedark
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
-set go-=m
-set go-=T
-set go-=ret
-set guifont=Hack\ Nerd\ Font\ Mono\ Regular\ 20
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vundle/bundle/Vundle.vim
@@ -26,25 +22,20 @@ Plugin 'tpope/vim-sensible'
 " Plugin 'valloric/youcompleteme'
 Plugin 'preservim/nerdtree'
 Plugin 'xuyuanp/nerdtree-git-plugin'
-
-" Appearance
 Plugin 'yggdroot/indentline'
 Plugin 'ap/vim-css-color'
 Plugin 'vim-airline/vim-airline'
-Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline-themes'
-
-" Notes
-Plugin 'vimwiki/vimwiki'
+Plugin 'airblade/vim-gitgutter'
 
 " End Plugins
 
 call vundle#end()
 filetype plugin indent on    " required for vundle
 
-let g:ycm_clangd_binary_path = "/usr/bin/clangd"
-let g:airline_theme = 'onedark'
+let g:airline_theme='onedark'
 
+let g:ycm_clangd_binary_path = "/usr/bin/clangd"
 if !exists('g:airline_symbols')
 				let g:airline_symbols = {}
 endif
@@ -78,7 +69,7 @@ set clipboard=unnamed
 " Enhance command-line completion
 set wildmenu
 " Allow cursor keys in insert mode
-set esckeys
+" set esckeys
 " Allow backspace in insert mode
 set backspace=indent,eol,start
 " Optimize for fast terminal connections

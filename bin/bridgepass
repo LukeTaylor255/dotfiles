@@ -1,0 +1,4 @@
+#!/bin/sh
+# Gets the current hydroxide bridge password
+
+cat ~/usr/code/hydroxide/bridge-pass.pass
